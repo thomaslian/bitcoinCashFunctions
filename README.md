@@ -21,3 +21,9 @@ firebase deploy --only functions
 ```
 firebase deploy --only functions:addMessage
 ```
+
+## VSC Extensions
+- toba.vsfire
+- eg2.vscode-npm-script
+- GitHub.copilot
+- xabikos.JavaScriptSnippets
