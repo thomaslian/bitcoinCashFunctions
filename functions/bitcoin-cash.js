@@ -25,9 +25,9 @@ exports.createAddress = functions.region('europe-west3').https.onCall(async (dat
     // Convert to public key
     const pubKey = bitbox.HDNode.toPublicKey(hdNode);
     // Convert to private key
-    const privKey = bitbox.HDNode.toPrivateKey(hdNode);
+    const privKey = bitbox.HDNode.toWif(hdNode);
 
-    return { pubKey, 'address': address.address, 'unconfirmed': balanceData.unconfirmedBalance };
+    return { pubKey, privKey };
 
     /*
     const cashAddr = bitbox.HDNode.toCashAddress(hdNode);
